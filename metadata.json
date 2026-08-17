@@ -1,0 +1,6 @@
+{
+  "name": "Kas & Iuran Remaja RT 04",
+  "description": "Sistem pencatatan keuangan Kas dan Iuran Remaja RT 04 dengan REST API, multiselect pembayaran, rekap laporan PDF, dan sinkronisasi data.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

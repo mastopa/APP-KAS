@@ -1,0 +1,62 @@
+{
+  "admins": [
+    {
+      "id": "adm-001",
+      "username": "admin",
+      "password": "admin123",
+      "nama_lengkap": "Admin RT 04",
+      "role": "Bendahara"
+    }
+  ],
+  "anggota": [],
+  "kategori": [
+    {
+      "id_kategori": "KAT-KAS-01",
+      "nama_kategori": "Kas Utama RT 04",
+      "is_kas_utama": true,
+      "target_nominal": 10000,
+      "deskripsi": "Iuran kas rutin bulanan seluruh anggota remaja RT 04",
+      "color": "#2563eb"
+    }
+  ],
+  "transaksi_kas": [],
+  "transaksi_lain": [],
+  "pengaturan": [
+    {
+      "key": "nama_organisasi",
+      "value": "Karang Taruna / Remaja RT 04"
+    },
+    {
+      "key": "nama_rt",
+      "value": "RT 04 / RW 03"
+    },
+    {
+      "key": "nominal_kas_bulanan",
+      "value": "10000"
+    },
+    {
+      "key": "nama_bendahara",
+      "value": "Bendahara RT 04"
+    },
+    {
+      "key": "kontak_bendahara",
+      "value": ""
+    },
+    {
+      "key": "rekening_kas",
+      "value": ""
+    },
+    {
+      "key": "qris_kas",
+      "value": ""
+    },
+    {
+      "key": "tema_default",
+      "value": "light"
+    },
+    {
+      "key": "auto_sync_sheets",
+      "value": "true"
+    }
+  ]
+}

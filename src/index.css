@@ -1,0 +1,105 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Brand Blues */
+  --color-blue-50: #E8F0FF;
+  --color-blue-100: #D9E2F2;
+  --color-blue-200: #BFDBFE;
+  --color-blue-300: #93C5FD;
+  --color-blue-400: #60A5FA;
+  --color-blue-500: #2563EB;
+  --color-blue-600: #155EEF;
+  --color-blue-700: #1239B8;
+  --color-blue-800: #312E81;
+  --color-blue-900: #172554;
+  --color-blue-950: #0D1630;
+
+  /* Slate / Neutrals */
+  --color-slate-50: #F8FAFC;
+  --color-slate-100: #E8EEF7;
+  --color-slate-200: #D9E2F2;
+  --color-slate-300: #CBD5E1;
+  --color-slate-400: #94A3B8;
+  --color-slate-500: #64748B;
+  --color-slate-600: #475569;
+  --color-slate-700: #26344D;
+  --color-slate-800: #162033;
+  --color-slate-900: #101827;
+  --color-slate-950: #080D1A;
+
+  /* Success / Emerald */
+  --color-emerald-50: #ECFDF5;
+  --color-emerald-100: #D1FAE5;
+  --color-emerald-200: #A7F3D0;
+  --color-emerald-300: #6EE7B7;
+  --color-emerald-400: #34D399;
+  --color-emerald-500: #10B981;
+  --color-emerald-600: #059669;
+  --color-emerald-700: #047857;
+  --color-emerald-800: #065F46;
+  --color-emerald-900: #064E3B;
+  --color-emerald-950: #052E2B;
+
+  /* Danger / Rose */
+  --color-rose-50: #FFF1F2;
+  --color-rose-100: #FFE4E6;
+  --color-rose-200: #FECDD3;
+  --color-rose-300: #FDA4AF;
+  --color-rose-400: #FB7185;
+  --color-rose-500: #F43F5E;
+  --color-rose-600: #E11D48;
+  --color-rose-700: #BE123C;
+  --color-rose-800: #9F1239;
+  --color-rose-900: #881337;
+  --color-rose-950: #3F111D;
+
+  /* Warning / Amber */
+  --color-amber-50: #FFFBEB;
+  --color-amber-100: #FEF3C7;
+  --color-amber-200: #FDE68A;
+  --color-amber-300: #FCD34D;
+  --color-amber-400: #FBBF24;
+  --color-amber-500: #F59E0B;
+  --color-amber-600: #D97706;
+  --color-amber-700: #B45309;
+  --color-amber-800: #92400E;
+  --color-amber-900: #78350F;
+  --color-amber-950: #3B2706;
+
+  /* Cyan Accent */
+  --color-cyan-400: #22D3EE;
+  --color-cyan-500: #06B6D4;
+
+  /* Border Radii */
+  --radius-sm: 10px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+}
+
+@layer base {
+  body {
+    @apply bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-50;
+  }
+}
+
+@layer utilities {
+  .bg-hero-gradient {
+    background: linear-gradient(135deg, #155EEF 0%, #1239B8 50%, #312E81 100%);
+  }
+  .dark .bg-hero-gradient {
+    background: linear-gradient(135deg, #1239B8 0%, #155EEF 50%, #312E81 100%);
+  }
+  
+  .shadow-rt {
+    box-shadow: 0 4px 20px rgba(15, 23, 42, 0.06);
+  }
+  .dark .shadow-rt {
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+  }
+  
+  .shadow-hero {
+    box-shadow: 0 12px 40px rgba(21, 94, 239, 0.20);
+  }
+}
