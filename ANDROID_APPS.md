@@ -65,7 +65,7 @@ export const themeColors = {
 
 ## 4. 🌐 Struktur Backend REST API
 
-**Base URL:** `https://[URL_BACKEND_ANDA]/api`  
+**Base URL:** `https://aplikasiremaja.ai.studio/api`  
 *(Semua request menggunakan format JSON dengan header `Content-Type: application/json`)*
 
 ### A. Autentikasi Admin
